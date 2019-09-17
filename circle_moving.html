@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="120">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>
+		circle moving
+	</title>
+	<script>
+		$(document).ready(function(){
+  			$("#btn1").click(function(){
+    			$("#m1").removeClass("ciefast1");
+    			$("#m2").removeClass("ciefast2");
+    			$("#m3").removeClass("ciefast3");
+    			$("#m4").removeClass("ciefast4");
+    			$("#m5").removeClass("ciefast5");
+    			$("#m6").removeClass("ciefast6");
+    			$("#m7").removeClass("ciefast7");
+    			$("#m8").removeClass("ciefast8");
+    			$("#m9").removeClass("ciefast9");
+  			});
+  			$("#btn1").click(function(){
+    			$("#m1").removeClass("cievfast1");
+    			$("#m2").removeClass("cievfast2");
+    			$("#m3").removeClass("cievfast3");
+    			$("#m4").removeClass("cievfast4");
+    			$("#m5").removeClass("cievfast5");
+    			$("#m6").removeClass("cievfast6");
+    			$("#m7").removeClass("cievfast7");
+    			$("#m8").removeClass("cievfast8");
+    			$("#m9").removeClass("cievfast9");
+  			});
+  			$("#btn1").click(function(){
+    			$("#m1").addClass("cie1");
+    			$("#m2").addClass("cie2");
+    			$("#m3").addClass("cie3");
+    			$("#m4").addClass("cie4");
+    			$("#m5").addClass("cie5");
+    			$("#m6").addClass("cie6");
+    			$("#m7").addClass("cie7");
+    			$("#m8").addClass("cie8");
+    			$("#m9").addClass("cie9");
+  			});
+  			$("#btn2").click(function(){
+    			$("#m1").removeClass("cie1");
+    			$("#m2").removeClass("cie2");
+    			$("#m3").removeClass("cie3");
+    			$("#m4").removeClass("cie4");
+    			$("#m5").removeClass("cie5");
+    			$("#m6").removeClass("cie6");
+    			$("#m7").removeClass("cie7");
+    			$("#m8").removeClass("cie8");
+    			$("#m9").removeClass("cie9");
+  			});
+  			$("#btn2").click(function(){
+    			$("#m1").removeClass("ciefast1");
+    			$("#m2").removeClass("ciefast2");
+    			$("#m3").removeClass("ciefast3");
+    			$("#m4").removeClass("ciefast4");
+    			$("#m5").removeClass("ciefast5");
+    			$("#m6").removeClass("ciefast6");
+    			$("#m7").removeClass("ciefast7");
+    			$("#m8").removeClass("ciefast8");
+    			$("#m9").removeClass("ciefast9");
+  			});
+  			$("#btn2").click(function(){
+    			$("#m1").removeClass("cievfast1");
+    			$("#m2").removeClass("cievfast2");
+    			$("#m3").removeClass("cievfast3");
+    			$("#m4").removeClass("cievfast4");
+    			$("#m5").removeClass("cievfast5");
+    			$("#m6").removeClass("cievfast6");
+    			$("#m7").removeClass("cievfast7");
+    			$("#m8").removeClass("cievfast8");
+    			$("#m9").removeClass("cievfast9");
+  			});
+  			$("#btn3").click(function(){
+    			$("#m1").removeClass("cie1");
+    			$("#m2").removeClass("cie2");
+    			$("#m3").removeClass("cie3");
+    			$("#m4").removeClass("cie4");
+    			$("#m5").removeClass("cie5");
+    			$("#m6").removeClass("cie6");
+    			$("#m7").removeClass("cie7");
+    			$("#m8").removeClass("cie8");
+    			$("#m9").removeClass("cie9");
+  			});
+  			$("#btn3").click(function(){
+    			$("#m1").removeClass("cievfast1");
+    			$("#m2").removeClass("cievfast2");
+    			$("#m3").removeClass("cievfast3");
+    			$("#m4").removeClass("cievfast4");
+    			$("#m5").removeClass("cievfast5");
+    			$("#m6").removeClass("cievfast6");
+    			$("#m7").removeClass("cievfast7");
+    			$("#m8").removeClass("cievfast8");
+    			$("#m9").removeClass("cievfast9");
+  			});
+  			$("#btn3").click(function(){
+    			$("#m1").addClass("ciefast1");
+    			$("#m2").addClass("ciefast2");
+    			$("#m3").addClass("ciefast3");
+    			$("#m4").addClass("ciefast4");
+    			$("#m5").addClass("ciefast5");
+    			$("#m6").addClass("ciefast6");
+    			$("#m7").addClass("ciefast7");
+    			$("#m8").addClass("ciefast8");
+    			$("#m9").addClass("ciefast9");
+  			});
+  			$("#btn4").click(function(){
+    			$("#m1").removeClass("cie1");
+    			$("#m2").removeClass("cie2");
+    			$("#m3").removeClass("cie3");
+    			$("#m4").removeClass("cie4");
+    			$("#m5").removeClass("cie5");
+    			$("#m6").removeClass("cie6");
+    			$("#m7").removeClass("cie7");
+    			$("#m8").removeClass("cie8");
+    			$("#m9").removeClass("cie9");
+  			});
+  			$("#btn4").click(function(){
+    			$("#m1").removeClass("ciefast1");
+    			$("#m2").removeClass("ciefast2");
+    			$("#m3").removeClass("ciefast3");
+    			$("#m4").removeClass("ciefast4");
+    			$("#m5").removeClass("ciefast5");
+    			$("#m6").removeClass("ciefast6");
+    			$("#m7").removeClass("ciefast7");
+    			$("#m8").removeClass("ciefast8");
+    			$("#m9").removeClass("ciefast9");
+  			});
+  			$("#btn4").click(function(){
+    			$("#m1").addClass("cievfast1");
+    			$("#m2").addClass("cievfast2");
+    			$("#m3").addClass("cievfast3");
+    			$("#m4").addClass("cievfast4");
+    			$("#m5").addClass("cievfast5");
+    			$("#m6").addClass("cievfast6");
+    			$("#m7").addClass("cievfast7");
+    			$("#m8").addClass("cievfast8");
+    			$("#m9").addClass("cievfast9");
+  			});
+		});
+	</script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		#ids{
+			height: 100%;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: black;
+			position: fixed;
+		}
+		#m1{
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;
+			
+		}
+		
+		#m2{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;
+			
+		}
+		#m3{
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;			
+		}
+		#m4{
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;
+			
+		}
+		#m5{
+			position: absolute;
+			width: 400px;
+			height: 400px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;
+			
+		}
+		#m6{
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;
+			
+		}
+		#m7{
+			position: absolute;
+			width: 600px;
+			height: 600px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;
+			
+		}
+		#m7{
+			position: absolute;
+			width: 600px;
+			height: 600px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;
+			
+		}
+		#m8{
+			position: absolute;
+			width: 700px;
+			height: 700px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;
+			
+		}
+		#m9{
+			position: absolute;
+			width: 800px;
+			height: 800px;
+			border-radius: 50%;
+			border:8px solid black;
+			border-top: 20px solid #48d1cc;
+			border-bottom: 20px solid green;
+			border-right: 20px solid orange;
+			border-left:  20px solid pink;
+		}
+		.cie1{
+			animation: spin 3.00s linear infinite;
+		}
+		.cie2{
+			animation: spin 3.01s linear infinite;
+		}.cie3{
+			animation: spin 3.02s linear infinite;
+		}.cie4{
+			animation: spin 3.03s linear infinite;
+		}.cie5{
+			animation: spin 3.04s linear infinite;
+		}.cie6{
+			animation: spin 3.05s linear infinite;
+		}.cie7{
+			animation: spin 3.06s linear infinite;
+		}.cie8{
+			animation: spin 3.07s linear infinite;
+		}.cie9{
+			animation: spin 3.08s linear infinite;
+		}
+		/*fast*/
+		.ciefast1{
+			animation: spin 1.00s linear infinite;
+		}
+		.ciefast2{
+			animation: spin 1.01s linear infinite;
+		}.ciefast3{
+			animation: spin 1.02s linear infinite;
+		}.ciefast4{
+			animation: spin 1.03s linear infinite;
+		}.ciefast5{
+			animation: spin 1.04s linear infinite;
+		}.ciefast6{
+			animation: spin 1.05s linear infinite;
+		}.ciefast7{
+			animation: spin 1.06s linear infinite;
+		}.ciefast8{
+			animation: spin 1.07s linear infinite;
+		}.ciefast9{
+			animation: spin 1.08s linear infinite;
+		}
+		/*vary fast*/
+		.cievfast1{
+			animation: spin 0.50s linear infinite;
+		}
+		.cievfast2{
+			animation: spin 0.51s linear infinite;
+		}.cievfast3{
+			animation: spin 0.52s linear infinite;
+		}.cievfast4{
+			animation: spin 0.53s linear infinite;
+		}.cievfast5{
+			animation: spin 0.54s linear infinite;
+		}.cievfast6{
+			animation: spin 0.55s linear infinite;
+		}.cievfast7{
+			animation: spin 0.56s linear infinite;
+		}.cievfast8{
+			animation: spin 0.57s linear infinite;
+		}.cievfast9{
+			animation: spin 0.58s linear infinite;
+		}
+		@keyframes spin{
+			0%{transform: rotate(0deg);}
+			100%{transform: rotate(360deg);}
+		}
+		button{
+		padding: 10px 10px 10px 10px;
+		font-size: 15px;
+		min-width: 150px;
+		transition: 0.3s;
+		position: absolute;
+		}
+		button:hover{
+		background-color: #00FFFF;
+		color: blue;
+		}
+		#btn1{
+			left: 6% ;
+			top: 25%;
+		}
+		#btn2{
+			right: 6% ;
+			top: 25%;
+		}
+		#btn3{
+			left: 6%;
+			bottom:25%;
+		}
+		#btn4{
+			right: 6%;
+			bottom:25%;
+		}
+		</style>
+</head>
+<body>
+	<div id="ids" class="container-fluid">
+		<div class="circle" id="m1"></div>
+		<div class="circle" id="m2"></div>
+		<div class="circle" id="m3"></div>
+		<div class="circle" id="m4"></div>
+		<div class="circle" id="m5"></div>
+		<div class="circle" id="m6"></div>
+		<div class="circle" id="m7"></div>
+		<div class="circle" id="m8"></div>
+		<div class="circle" id="m9"></div>
+		<button id="btn1" class="btn">Start</button>
+		<button id="btn2" class="btn">End</button>
+		<button id="btn3" class="btn">Start fast</button>
+		<button id="btn4" class="btn">start vary-fast</button>
+	</div>
+</body>
+</html>
