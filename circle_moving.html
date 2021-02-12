@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="120">
+  <meta http-equiv="refresh" content="125">
+  <meta name="MobileOptimized" content="width" />
+	<meta name="HandheldFriendly" content="true" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<title>
 		circle moving
@@ -169,7 +171,7 @@
 			height: 1px;
 			border-radius: 50%;
 			border:8px solid black;
-			border-top: 20px solid #48d1cc;
+			border-top: 20px solid #48d1cd;
 			border-bottom: 20px solid green;
 			border-right: 20px solid orange;
 			border-left:  20px solid pink;
@@ -182,7 +184,7 @@
 			height: 100px;
 			border-radius: 50%;
 			border:8px solid black;
-			border-top: 20px solid #48d1cc;
+			border-top: 20px solid #48d1cd;
 			border-bottom: 20px solid green;
 			border-right: 20px solid orange;
 			border-left:  20px solid pink;
@@ -194,7 +196,7 @@
 			height: 200px;
 			border-radius: 50%;
 			border:8px solid black;
-			border-top: 20px solid #48d1cc;
+			border-top: 20px solid #48d1cd;
 			border-bottom: 20px solid green;
 			border-right: 20px solid orange;
 			border-left:  20px solid pink;			
@@ -205,7 +207,7 @@
 			height: 300px;
 			border-radius: 50%;
 			border:8px solid black;
-			border-top: 20px solid #48d1cc;
+			border-top: 20px solid #48d1cd;
 			border-bottom: 20px solid green;
 			border-right: 20px solid orange;
 			border-left:  20px solid pink;
@@ -253,7 +255,7 @@
 			height: 600px;
 			border-radius: 50%;
 			border:8px solid black;
-			border-top: 20px solid #48d1cc;
+			border-top: 20px solid #48d1cd;
 			border-bottom: 20px solid green;
 			border-right: 20px solid orange;
 			border-left:  20px solid pink;
@@ -277,7 +279,7 @@
 			height: 800px;
 			border-radius: 50%;
 			border:8px solid black;
-			border-top: 20px solid #48d1cc;
+			border-top: 20px solid #48d1cd;
 			border-bottom: 20px solid green;
 			border-right: 20px solid orange;
 			border-left:  20px solid pink;
@@ -374,6 +376,37 @@
 		#btn4{
 			right: 6%;
 			bottom:25%;
+		}
+		.extraclass{
+			 height: 10px;
+		    width: 10px;
+		    position: absolute;
+		    border-radius: 50%;
+		    border: 1px solid rgb(23, 115, 85);
+		    background-color: rgb(225, 124, 28);
+		    transform-origin: top center;
+		    top: -4px;
+		    left: 15px;
+		    border-left-color: blueviolet;
+		    border-right-color: chartreuse;
+		    animation: item_b 1s ease-in-out 0s infinite; 
+		}
+		@keyframes item_b{
+		    0%{
+		        transform: scale(1);
+		    }
+		    25%{
+		        transform: scale(0.5);
+		    }
+		    50%{
+		        transform: scale(1);
+		    }
+		    75%{
+		        transform: scale(0.5);
+		    }
+		    100%{
+		        transform: rotate(1);
+		    }
 		}
 		</style>
 </head>
